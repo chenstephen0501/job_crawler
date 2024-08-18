@@ -2,12 +2,7 @@
 
 # Python
 __pycache__/
-*.py[cod]
-*.egg
-*.egg-info/
-dist/
-build/
-*.bak
+
 .env
 
 # Django
@@ -17,7 +12,7 @@ db.sqlite3
 
 # Virtual environments
 .venv/
-venv/
-env/
-poetry.lock
+
 .DS_Store
+
+response_content.html

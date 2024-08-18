@@ -1,0 +1,8 @@
+from django.urls import path
+from .views import fetch_cake_jobs
+
+app_name = "jobs"
+
+urlpatterns = [
+    path("fetch_cake/", fetch_cake_jobs, name="fetch_cake_jobs")
+]
