@@ -5,7 +5,9 @@
 `job_crawler` 是一個用於自動化爬取求職網站 CakeResume 平台上已應徵職缺資訊的 Python 專案。專案使用 `Selenium` 和 `BeautifulSoup` 來模擬使用者行為並抓取相關資料，最後將結果以 JSON 格式輸出，便於進一步處理和分析。
 
 ![職缺爬蟲首頁](/public/image/fetch_jobs.jpg)
-[觀看影片演示](https://youtu.be/R7QqjPjOSg4)
+![首頁爬蟲演示](/public/image/fetch_jobs.gif)
+
+ [觀看影片演示連結](https://youtu.be/R7QqjPjOSg4)
 
 ## 專案功能
 
