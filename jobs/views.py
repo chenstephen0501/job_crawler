@@ -139,10 +139,10 @@ def fetch_cake_jobs_all(req):
 
 def user_apply_jobs(request):
     url = 'https://www.cakeresume.com/'
-    firefox_binary_path = 'C:/Program Files/Mozilla Firefox/firefox.exe'
+    firefox_binary_path = '/usr/bin/firefox' 
     options = webdriver.FirefoxOptions()
     options.binary_location = firefox_binary_path
-    geckodriver_path = "C:/webdriver/geckodriver-v0.35.0-win64/geckodriver.exe"
+    geckodriver_path = '/usr/local/bin/geckodriver'
     service = webdriver.FirefoxService(executable_path=geckodriver_path)
     driver = webdriver.Firefox(service=service, options=options)
 
@@ -222,19 +222,15 @@ def user_apply_jobs(request):
 
 def user_login(request):
     url = 'https://www.cakeresume.com/'
-    
-    firefox_binary_path = 'C:/Program Files/Mozilla Firefox/firefox.exe'
-    
+    firefox_binary_path = '/usr/bin/firefox' 
     options = webdriver.FirefoxOptions()
     options.binary_location = firefox_binary_path
-    
-    geckodriver_path = "C:/webdriver/geckodriver-v0.35.0-win64/geckodriver.exe"
+    geckodriver_path = '/usr/local/bin/geckodriver'
     service = webdriver.FirefoxService(executable_path=geckodriver_path)
-    
     driver = webdriver.Firefox(service=service, options=options)
 
     driver.get(url)
-    
+
     try:
         login_button = driver.find_element(By.LINK_TEXT, "登入")
         login_button.click()
