@@ -68,7 +68,8 @@ $ python manage.py runserver
 
     - GET http://127.0.0.1:8000/jobs/fetch_cake/：抓取指定應徵職缺資訊
     - GET http://127.0.0.1:8000/jobs/fetch_cake_all/：抓取所有應徵職缺資訊
-    - GET http://127.0.0.1:8000/jobs/user_apply_jobs/：手動觸發爬蟲，並獲取應徵職缺結果
+    - GET http://127.0.0.1:8000/jobs/user_login/：手動觸發自動化登入。
+    - GET http://127.0.0.1:8000/jobs/user_apply_jobs/：手動自動化登入並且觸發爬蟲，獲取應徵職缺結果
 
 ### 4. 設定環境變數
 
